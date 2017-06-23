@@ -3,11 +3,11 @@ import { Canvas } from '../models/canvas';
 
 @Component({
 selector: 'jigsaw',
-templateUrl: './canvas.html',
-styleUrls:  ['./canvas.css']
+templateUrl: './canvas.component.html',
+styleUrls:  ['./canvas.component.css']
 })
 
 export class CanvasComponent {
  Canvas = new Canvas();
- title = 'canvas part'
+ title = "canvasrt" + this.Canvas.Columns[1]
 }

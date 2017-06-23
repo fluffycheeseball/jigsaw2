@@ -1,0 +1,7 @@
+<div *ngFor="let files of Canvas.Columns, let r = index">
+    <div class="canvas-square droppable-square" *ngFor="let row of Canvas.Rows, let c = index"     
+        [style.background]=" (r%2==0 && c%2 != 0) || ((r%2!=0 && c%2 == 0)) ? '#FECE9E' : '#D18B46'">
+        <span class="square-name">{{Canvas.Locations[r][c]}}</span>
+    </div>
+</div>
+<div>{{title}}</div>

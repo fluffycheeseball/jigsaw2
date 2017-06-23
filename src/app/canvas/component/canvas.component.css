@@ -8,6 +8,7 @@ canvas {
 .canvas-square {
   height: 100px;
   width: 100px;
+  border: 1px #444 solid;
   display: inline-block;
 }
 

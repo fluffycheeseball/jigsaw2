@@ -1,0 +1,8 @@
+<div *ngFor="let files of Canvas.Columns, let i = index">
+    <div class="canvas-square droppable-square" *ngFor="let rank of Board.Ranks, let j = index"     
+        [style.background]="i%2==0 ? '#FECE9E' : '#D18B46'">
+        <span class="square-name">{{Canvas.Squares[7-i][j]}}</span>
+        <div *ngIf="Canvs.Squares[7-i][j].Piece" class="piece draggable-piece"></div>
+    </div>
+</div>
+<div>{{title}}</div>
